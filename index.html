@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tshirt Form</title>
+</head>
+<body>
+  <h1>Tshirt Form</h1>
+  <form action="" method="post">
+   <fieldset>
+  <label for="fname">First Name:</label><input type="text" id="fname" placeholder="Enter your first name here!" required ><br><br>
+   <label>Last Name:</label><input type="text" placeholder="Enter your last name here!" required ><br><br>
+    <label>Email-ID:</label><input type="email" placeholder="Enter your email here!" required><br><br>
+     <label>Phone Number:</label><input type="text" placeholder="Enter your phone no. here!" required ><br><br>
+<label>Address:</label><textarea name="addres" rows="10" cols="30"  required>
+Enter your address here!
+</textarea><br>
+    </fieldset>
+    <fieldset>
+      <label>Select the size:</label><br>
+      <input type="radio" id="Coding" name="skills" value="coding">
+  <label for="Coding"> XS</label><br>
+  <input type="radio" id="Business" name="skills" value="business">
+  <label for="business">S</label><br>
+  <input type="radio" id="Medicine" name="skills" value="medicine">
+  <label for="medicine">M</label><br>
+      <input type="radio" id="law" name="skills" value="law">
+      <label for="law">L</label></br>
+      <input type="radio" id="xl" name="skills" value="xl">
+  <label for="xl">XL</label>
+    </fieldset>
+  <fieldset>
+      <label>Select the colour:</label><br>
+      <input type="radio" id="red" name="color" value="red">
+  <label for="red">Red</label><br>
+  <input type="radio" id="blue" name="color" value="blue">
+  <label for="blue">Blue</label><br>
+  <input type="radio" id="green" name="color" value="green">
+  <label for="green">Green</label><br>
+      <input type="radio" id="black" name="color" value="black">
+      <label for="black">Black</label></br>
+      
+    </fieldset>
+  <fieldset>
+    <label>Quantity:</label><input type="number" min=1 max=100><br><br>
+    <label for="deli">Choose a payment method:</label>
+<select id="deli" name="deli" required>
+  <option value="upi">UPI</option>
+  <option value="debit">Debit/Credit Card</option>
+  <option value="cod">Cash on Delivery</option>
+  <option value="gift">Gift Voucher</option>
+</select><br><br>
+    <label for="date">Delivery wanted by:</label>
+<input type="date" id="deliverydate" name="deliverydate"><br><br>
+<label for="files">Select a graphic for your tshirt:</label>
+  <input type="file" id="files" name="files" multiple><br><br>
+    <label>How did you find us?</label><textarea name="message" rows="10" cols="30">
+I found you on...
+</textarea>
+  </fieldset><br>
+  <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
